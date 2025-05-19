@@ -6,6 +6,12 @@
     z-index: 10;
     background: $color-bg;
     box-shadow: none;
+
+    @media (min-width: 768px) {
+        button {
+            display: none;
+        }
+    }
 }
 
 .header__logo img {

@@ -2,3 +2,90 @@
 @use '../mixins' as *;
 
 // Placeholder for nav enhancements 
+
+.nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-md;
+}
+
+.nav__item {
+    // For future use
+}
+
+.nav__link {
+    font-family: $font-family-condensed;
+    font-weight: 700;
+    font-size: $font-size-badge;
+    letter-spacing: 0.066em;
+    color: $color-primary;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: opacity 0.2s, color 0.2s;
+    opacity: 1;
+    position: relative;
+    padding: 0.25rem 0;
+    display: inline-block;
+}
+
+.nav__login {
+    opacity: 0.5;
+}
+
+// Desktop styles
+@media (min-width: 900px) {
+    .header__nav {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        align-items: center;
+        background: transparent;
+        box-shadow: none;
+        height: auto;
+        width: auto;
+        padding: 0;
+    }
+
+    .nav__list {
+        flex-direction: row;
+        gap: $spacing-lg;
+    }
+
+    .nav__link {
+        font-size: $font-size-badge;
+        letter-spacing: 0.066em;
+        color: $color-primary;
+        opacity: 1;
+        padding: 0.25rem 0;
+
+        &.is-active,
+        &:hover,
+        &:focus {
+            color: $color-primary;
+
+            &::after {
+                content: '';
+                display: block;
+                margin: 0 auto;
+                width: 1.5rem;
+                height: 0.5rem;
+                background: $color-primary;
+                border-radius: 50%;
+                opacity: 0.15;
+                margin-top: 0.25rem;
+            }
+        }
+
+        &::after {
+            content: '';
+            display: none;
+        }
+    }
+
+    .nav__login {
+        opacity: 0.5;
+    }
+}

@@ -1,0 +1,22 @@
+// Background rectangle for hero section (mobile first)
+.body-bg-rectangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 320px;
+    z-index: 0;
+    pointer-events: none;
+    background: url('../../images/background-rectangle.svg') no-repeat top left/cover;
+    border-bottom-left-radius: 60px;
+    overflow: hidden;
+}
+
+@media (min-width: 900px) {
+    .body-bg-rectangle {
+        height: 427px;
+        width: 100vw;
+        background-size: cover;
+        border-bottom-left-radius: 60px;
+    }
+}

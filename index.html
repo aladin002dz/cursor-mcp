@@ -13,20 +13,20 @@
 <body>
     <header class="header">
         <div class="header__logo">
-            <img src="images/logo-path-1.svg" alt="Logo">
+            <img src="images/logo.svg" alt="Logo">
         </div>
         <button class="header__menu-btn" id="openMenu" aria-label="Open menu">
-            <img src="images/logo-path-2.svg" alt="Open menu">
+            <img src="images/menu-icon.svg" alt="Open menu">
         </button>
         <nav class="header__nav" id="mobileMenu" aria-label="Mobile menu">
             <button class="header__close-btn" id="closeMenu" aria-label="Close menu">
-                <img src="images/logo-path-3.svg" alt="Close menu">
+                <img src="images/close-icon.svg" alt="Close menu">
             </button>
             <ul class="nav__list">
-                <li><a href="#">PRODUCT</a></li>
-                <li><a href="#">FEATURES</a></li>
-                <li><a href="#">PRICING</a></li>
-                <li><a href="#" class="nav__login">LOGIN</a></li>
+                <li class="nav__item"><a href="#" class="nav__link is-active">PRODUCT</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">FEATURES</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">PRICING</a></li>
+                <li class="nav__item"><a href="#" class="nav__link nav__login">LOGIN</a></li>
             </ul>
         </nav>
     </header>
@@ -41,7 +41,10 @@
             <a href="#" class="main__cta">SCHEDULE A DEMO</a>
             <p class="main__preview">TO SEE A PREVIEW</p>
         </div>
-        <div class="main__dashboard-img"></div>
+        <div class="main__dashboard-img">
+            <img src="images/dashboard.png" alt="Dashboard">
+        </div>
+        <div class="body-bg-rectangle"></div>
     </main>
     <script src="js/menu.js"></script>
 </body>
