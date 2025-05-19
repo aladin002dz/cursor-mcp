@@ -1,0 +1,9 @@
+@use '../variables' as *;
+
+.main__preview {
+    font-family: $font-family-condensed;
+    font-size: $font-size-cta;
+    opacity: 0.5;
+    letter-spacing: 0.18em;
+    margin-top: $spacing-xs;
+}

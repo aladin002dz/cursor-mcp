@@ -1,0 +1,26 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.badge {
+    display: inline-block;
+    font-family: $font-family-condensed;
+    font-size: $font-size-badge;
+    font-weight: 700;
+    border-radius: $radius-badge;
+    padding: 0 $spacing-xs;
+    background: $color-bg;
+    color: $color-primary;
+    margin-right: $spacing-xs;
+}
+
+.badge--new {
+    background: $color-primary;
+    color: $color-bg;
+    letter-spacing: 0.067em;
+}
+
+.badge__label {
+    opacity: 0.5;
+    font-weight: 400;
+    letter-spacing: 0.33em;
+}

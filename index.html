@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Tracking Intro Component</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="images/logo-path-1.svg" alt="Logo">
+        </div>
+        <button class="header__menu-btn" id="openMenu" aria-label="Open menu">
+            <img src="images/logo-path-2.svg" alt="Open menu">
+        </button>
+        <nav class="header__nav" id="mobileMenu" aria-label="Mobile menu">
+            <button class="header__close-btn" id="closeMenu" aria-label="Close menu">
+                <img src="images/logo-path-3.svg" alt="Close menu">
+            </button>
+            <ul class="nav__list">
+                <li><a href="#">PRODUCT</a></li>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">PRICING</a></li>
+                <li><a href="#" class="nav__login">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="main__content">
+            <div class="main__badge">
+                <span class="badge badge--new">NEW</span>
+                <span class="badge__label">MONOGRAPH DASHBOARD</span>
+            </div>
+            <h1 class="main__title">POWERFUL INSIGHTS<br>INTO YOUR TEAM</h1>
+            <p class="main__subtitle">Project planning and time tracking for agile teams</p>
+            <a href="#" class="main__cta">SCHEDULE A DEMO</a>
+            <p class="main__preview">TO SEE A PREVIEW</p>
+        </div>
+        <div class="main__dashboard-img"></div>
+    </main>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>

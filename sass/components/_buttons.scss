@@ -1,0 +1,25 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+@use 'sass:color';
+
+.main__cta {
+    display: inline-block;
+    background: $color-accent;
+    color: $color-bg;
+    font-family: $font-family-condensed;
+    font-size: $font-size-cta;
+    font-weight: 700;
+    letter-spacing: 0.066em;
+    border: none;
+    border-radius: $radius-badge;
+    padding: $spacing-xs $spacing-md;
+    margin-top: $spacing-sm;
+    box-shadow: $shadow-main;
+    transition: background 0.2s;
+    text-align: center;
+    cursor: pointer;
+}
+
+.main__cta:hover {
+    background: color.adjust($color-accent, $lightness: -10%);
+}

@@ -1,0 +1,47 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.header {
+    position: relative;
+    z-index: 10;
+    background: $color-bg;
+    box-shadow: none;
+}
+
+.header__logo img {
+    height: 2.5rem;
+}
+
+.header__menu-btn {
+    background: none;
+    border: none;
+    padding: $spacing-xs;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.header__nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: $color-bg;
+    box-shadow: $shadow-menu;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: $spacing-lg $spacing-md $spacing-md $spacing-md;
+}
+
+.header__nav.open {
+    display: flex;
+}
+
+.header__close-btn {
+    background: none;
+    border: none;
+    margin-bottom: $spacing-md;
+    cursor: pointer;
+}

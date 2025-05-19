@@ -1,0 +1,13 @@
+Create a simple and clean html, css and sass project structure for the figma design. 
+make sure to get the images from the figma design.
+Make sure to get the colors, fonts, spacing and other design elements exactly the same from the figma design.
+Make sure to create a main.scss file that will import all the partials in the sass folder.
+Make sure to create a index.html file that will use the generated css file.
+Make sure to create a sass folder that will contain all the partials.
+Make sure to create a images folder that will contain all the images.
+Make sure to create javascript to handle the open menu and close menu on mobile.
+make sure to follow mobile first approach.
+Please use MCP to make sur you produce the exact same design.
+
+mobile figma design: https://www.figma.com/design/pvuz5hWI17RGHTjcG02MbL/project-tracking-intro-component?node-id=0-118&m=dev
+open menu figma design: https://www.figma.com/design/pvuz5hWI17RGHTjcG02MbL/project-tracking-intro-component?node-id=0-2&m=dev
